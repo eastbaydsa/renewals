@@ -29,5 +29,6 @@ Follow instructions to sign in/ sign up for a surge account.
 ## Deploying changes
 
 ```
+npm run build
 npm run deploy
 ```

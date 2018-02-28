@@ -13,7 +13,6 @@ const Wrapper = styled.div`
   ${breakpoint.desktop`
     background-image: url(/images/cover@2x.png);
   `};
-
   position: relative;
 
   &::before {
@@ -39,6 +38,11 @@ const Title = styled.h1`
   text-transform: uppercase;
   text-align: center;
   margin: 60px 30px;
+
+  ${breakpoint.mobile`
+    margin: 30px 15px;
+    font-size: 40px;
+  `};
 `;
 
 class Cover extends PureComponent {
