@@ -12,13 +12,8 @@ const Wrapper = styled.div`
   margin-right: 20px;
   margin-bottom: 20px;
 
-  background-color: ${purple};
+  background-color: ${red};
   color: white;
-
-  &:nth-child(4n),
-  &:nth-child(4n + 1) {
-    background-color: ${red};
-  }
 
   ${breakpoint.tablet`
     margin: 0;
@@ -28,8 +23,10 @@ const Wrapper = styled.div`
 const Title = styled.p`
   font-weight: 600;
   font-size: 24px;
-  line-height: 1;
+  line-height: 1.3;
   flex: 1 1 auto;
+  margin-bottom: 15px;
+  margin-right: 30px;
 `;
 
 const StyledLink = styled(Link)`

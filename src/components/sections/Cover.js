@@ -1,14 +1,13 @@
-import React, { PureComponent } from 'react';
-import styled from 'styled-components';
-import { red, purple } from '../colors';
-import NavAnchor from '../NavAnchor';
-import breakpoint from '../styles/breakpoint';
+import React, { PureComponent } from "react";
+import styled from "styled-components";
+import { red, purple } from "../colors";
+import NavAnchor from "../NavAnchor";
+import breakpoint from "../styles/breakpoint";
 
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 30vh;
   border-bottom: 20px solid ${red};
 
   ${breakpoint.desktop`
@@ -18,7 +17,7 @@ const Wrapper = styled.div`
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     background-image: url(/images/cover.png);
     background-size: cover;
     background-position: right bottom;
@@ -35,10 +34,11 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   color: ${purple};
   font-weight: 700;
-  font-size: 10vmin;
+  font-size: 2em;
   text-shadow: rgba(0, 0, 0, 0.33) 1px 1px 0;
   text-transform: uppercase;
   text-align: center;
+  margin: 60px 30px;
 `;
 
 class Cover extends PureComponent {
@@ -46,9 +46,7 @@ class Cover extends PureComponent {
     return (
       <NavAnchor anchor={this.props.anchor}>
         <Wrapper>
-          <Title>
-            East Bay DSA<br />Renew Your Dues
-          </Title>
+          <Title>East Bay DSA Membership Renewal</Title>
         </Wrapper>
       </NavAnchor>
     );

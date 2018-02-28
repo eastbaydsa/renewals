@@ -5,10 +5,9 @@ import { red } from "./colors";
 import breakpoint from "./styles/breakpoint";
 
 const Fig = styled.figure`
-  ${breakpoint.tablet`
-    float: ${props => props.align};
-    width: 30%;
-  `};
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
 `;
 
 const Caption = styled.figcaption`
@@ -17,6 +16,11 @@ const Caption = styled.figcaption`
   text-align: right;
   color: ${red};
   font-weight: 600;
+`;
+
+const Img = styled.img`
+  width: 30%;
+  min-width: 200px;
 `;
 
 class Figure extends PureComponent {
@@ -28,7 +32,7 @@ class Figure extends PureComponent {
     return (
       <Fig align={this.props.align}>
         {this.props.graphic ? (
-          <img src={`/images/${this.props.graphic}.svg`} alt={this.props.alt} />
+          <Img src={`/images/${this.props.graphic}.svg`} alt={this.props.alt} />
         ) : null}
         <Caption>{this.props.children}</Caption>
       </Fig>

@@ -5,13 +5,13 @@ import breakpoint from "../styles/breakpoint";
 const Div = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 20px -20px 20px 0;
+  margin: 20px 0;
 
   ${breakpoint.tablet`
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 48% 48%;
     grid-auto-rows: 1fr;
-    grid-gap: 40px;
+    grid-gap: 4%;
   `};
 `;
 
