@@ -31,7 +31,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h1`
-  color: ${purple};
+  color: ${red};
   font-weight: 700;
   font-size: 2em;
   text-shadow: rgba(0, 0, 0, 0.33) 1px 1px 0;
